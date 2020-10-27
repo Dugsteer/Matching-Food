@@ -1,7 +1,7 @@
 {
-  "name": "matching-animals",
+  "name": "matching-food",
   "version": "1.0.0",
-  "description": "",
+  "description": "Food card matching game for esl lessons",
   "main": "script.js",
   "devDependencies": {
     "autoprefixer": "^9.8.0",

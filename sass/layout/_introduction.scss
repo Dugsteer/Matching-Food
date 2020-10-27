@@ -17,7 +17,7 @@
     box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
 
     @media only screen and (max-width:$bp-large){
-        width: 500px;
+        width: 700px;
         height: auto;    
        }
     @media only screen and (max-width:$bp-small){
@@ -46,25 +46,23 @@
        }
     
     &__img {
+        position: relative;
         // width: 17vw;
-        width: 160px;
+        width: 200px;
         // height: 17vw;
-        height: 380px;
+        height: 280px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: $color-green;
-        padding: 20px;
         align-self: center;
         margin-bottom: 2rem;
         border-radius: 3px;
-        padding-right: 1rem;
         cursor: pointer;
         box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
 
         @media only screen and (max-width:$bp-large){
-           width: 140px;
-           height: 330px;
+           width: 200px;
+           height: 280px;
            margin-right: 2rem;
         
            }
@@ -73,6 +71,8 @@
            height: 100%;
            width: 100%;
         }
+
+     
     }
 
     &__text{
@@ -100,6 +100,10 @@
            }
 
     }
+
+    &__text h1 {
+        color: $color-blue;
+    }
     &__choices {
         display: flex;
         flex-direction: column;
@@ -111,7 +115,7 @@
         }
       }
       &__set {
-        background-color: $color-blue;
+        background-color: $color-fred;
         height: 30px;
         width: 50px;
         border-radius: 8px;
@@ -119,7 +123,8 @@
         color: $color-white;
         text-transform: uppercase;
         border: none;
-        box-shadow: $box-shadow-large;
+        box-shadow: $box-shadow-small;
+
     
         &:hover {
           transform: scale(1.1);
@@ -132,6 +137,10 @@
     
       
       }
+}
+
+.setlist {
+    color: $color-blue;
 }
 
 .bugflash {
@@ -167,6 +176,29 @@
         left: 25%;
     }
 }
+
+.orange {
+    position: absolute;
+    left: 40px;
+    top: 55px;
+    height: 50%;
+    width: 70%;
+    
+}
+
+.turnOrange {
+    animation: rotater 4s ease-in-out infinite;
+}
+
+@keyframes rotater {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(7200deg);
+    }
+}
+
 .bugbutton {
     position: absolute;
     left: 35%;
